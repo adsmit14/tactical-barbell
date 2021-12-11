@@ -1,0 +1,4 @@
+{ :deps 
+ { cheshire/cheshire {:mvn/version "5.10.1"}}
+ :aliases 
+ { :resources {:extra-paths ["resources"] }}}
