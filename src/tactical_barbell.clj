@@ -40,7 +40,7 @@
                                          (select-keys (second %) lifts)))) (apply merge max-day))))
 
 (defn calculate-weight [percent max]
-  (int (* (Math/floor (Math/abs (float (/ (* max (/ percent 100)) 5)))) 5)))
+  (* (Math/floor (Math/abs (float (/ (* max (/ percent 100)) 2.5)))) 2.5))
 
 (defn weeks [maxes template]
   (into (sorted-map) (apply merge (map (fn [[lifter lifts]]
@@ -48,7 +48,6 @@
                                                                  (merge {} {:percent percent :sets-reps (str (:sets routine) "x" (:reps routine))}
                                                                         (into {} (map (fn [[lift weight]] [lift (calculate-weight percent weight)]) lifts))))
                                                                (template templates)))) maxes))))
-
 (defn -main
   "Generates Operator Block From Lastest Max Date"
   []
@@ -57,3 +56,5 @@
       (println lifter)
       (pprint/print-table block)
       (println))))
+
+(comment (-main))
