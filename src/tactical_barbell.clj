@@ -28,7 +28,7 @@
 (defn read-file [] (parse-stream (io/reader (io/resource "max.json")) keyword))
 
 (defn sort-by-date-descending [days] (sort-by
-                                       (fn [x] (LocalDate/parse (get x "date") (DateTimeFormatter/ofPattern "M/d/y")))
+                                       (fn [x] (LocalDate/parse (:date x) (DateTimeFormatter/ofPattern "M/d/y")))
                                        (comp - compare) days))
 
 (defn latest-max-day [data] (map #(let [person (first %) days (second %)]
