@@ -75,6 +75,25 @@
         "reps": 1,
         "weight": 295
       }
+    },
+    {
+      "date": "07/10/2022",
+      "bench": {
+        "reps": 3,
+        "weight": 205
+      },
+      "back-squat": {
+        "reps": 2,
+        "weight": 225
+      },
+      "chin-ups": {
+        "reps": 1,
+        "weight": 255
+      },
+      "deadlift": {
+        "reps": 1,
+        "weight": 295
+      }
     }
   ],
   "kelsey": [
@@ -148,6 +167,25 @@
       "chin-ups": {
         "reps": 1,
         "weight": 203
+      },
+      "deadlift": {
+        "reps": 1,
+        "weight": 245
+      }
+    },
+    {
+      "date": "07/10/2022",
+      "bench": {
+        "reps": 1,
+        "weight": 135
+      },
+      "back-squat": {
+        "reps": 2,
+        "weight": 225
+      },
+      "chin-ups": {
+        "reps": 1,
+        "weight": 217
       },
       "deadlift": {
         "reps": 1,

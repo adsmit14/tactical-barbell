@@ -7,9 +7,14 @@
     (java.lang
       Math)
     (java.time
+      DayOfWeek
       LocalDate)
     (java.time.format
-      DateTimeFormatter)))
+      DateTimeFormatter)
+    (net.fortuna.ical4j.data
+      CalendarOutputter)
+    (net.fortuna.ical4j.model
+      Calendar)))
 
 
 (def templates
@@ -79,11 +84,18 @@
 (defn -main
   "Generates Operator Block From Lastest Max Date"
   []
-  (let [w (weeks (person-lift-maxes (latest-max-day (read-file))) :operator)]
+  (let [dayOfWeek (DayOfWeek/MONDAY) w (weeks (person-lift-maxes (latest-max-day (read-file))) :operator)]
     (doseq [[lifter block] w]
       (println lifter)
       (pprint/print-table block)
       (println))))
 
 
-;; (comment (-main))
+;; function that takes current date, week index, and using the dayofweek finds the
+;; first date that falls on and creates an event for that date plus one 48 and 96hrs after.
+
+;; iterate over block and create 3 events for each week -- in those events plop the details
+;; then create the calendar and add the events
+
+(comment (LocalDate/now))
+(comment (-main))
