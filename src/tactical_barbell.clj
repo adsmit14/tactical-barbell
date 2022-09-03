@@ -5,8 +5,6 @@
     [clojure.pprint :as pprint]
     [clojure.math :refer [ceil]])
   (:import
-    (java.lang
-      Math)
     (java.time
       LocalDate)
     (java.time.format
@@ -39,7 +37,8 @@
      :chin-ups
      :pull-ups
      :deadlift
-     :press))
+     :press
+     :barbell-row))
 
 
 (defn brzycki-formula
