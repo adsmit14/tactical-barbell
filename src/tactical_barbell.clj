@@ -83,7 +83,7 @@
 (defn -main
   "Generates Block From Lastest Max Date"
   []
-  (let [w (weeks (person-lift-maxes (latest-max-day max-days)) :fighter)]
+  (let [w (weeks (person-lift-maxes (latest-max-day max-days)) :operator)]
     (doseq [[lifter block] w]
       (println lifter)
       (pprint/print-table block)
