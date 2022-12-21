@@ -28,7 +28,17 @@
    :bench {:reps 2, :weight 205},
    :back-squat {:reps 2, :weight 225},
    :chin-ups {:reps 1, :weight 255},
-   :deadlift {:reps 1, :weight 295}}],
+   :deadlift {:reps 1, :weight 295}}
+  {:date "10/22/2022",
+   :bench {:reps 1, :weight 215},
+   :back-squat {:reps 1, :weight 245},
+   :chin-ups {:reps 1, :weight 250},
+   :deadlift {:reps 1, :weight 305}}
+  {:date "12/18/2022",
+   :bench {:reps 1, :weight 215},
+   :back-squat {:reps 1, :weight 245},
+   :chin-ups {:reps 1, :weight 235},
+   :deadlift {:reps 1, :weight 305}}],
  :kelsey
  [{:date "12/05/2021",
    :bench {:reps 2, :weight 115},
@@ -59,4 +69,14 @@
    :bench {:reps 1, :weight 125},
    :back-squat {:reps 2, :weight 225},
    :chin-ups {:reps 1, :weight 217},
-   :deadlift {:reps 1, :weight 245}}]}
+   :deadlift {:reps 1, :weight 245}}
+  {:date "10/22/2022",
+   :bench {:reps 1, :weight 135},
+   :back-squat {:reps 1, :weight 245},
+   :chin-ups {:reps 1, :weight 217},
+   :deadlift {:reps 1, :weight 255}}
+  {:date "12/18/2022",
+  :bench {:reps 1, :weight 125},
+  :back-squat {:reps 1, :weight 225},
+  :chin-ups {:reps 1, :weight 217},
+  :deadlift {:reps 1, :weight 235}}]}

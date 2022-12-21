@@ -28,7 +28,6 @@
     {:percent 80 :sets 5 :reps 5}
     {:percent 90 :sets 5 :reps 3}]})
 
-
 (def lifts
   '(:bench
      :incline-bench
@@ -39,7 +38,6 @@
      :deadlift
      :press
      :barbell-row))
-
 
 (defn brzycki-formula
   [weight reps]
@@ -78,7 +76,6 @@
                                                                  (merge {} {:percent (:percent routine) :sets-reps (str (:sets routine) "x" (:reps routine))}
                                                                         (into {} (map (fn [[lift weight]] [lift (calculate-weight (:percent routine) weight)]) lifts))))
                                                                (template templates)))) maxes))))
-
 
 (defn -main
   "Generates Block From Lastest Max Date"
